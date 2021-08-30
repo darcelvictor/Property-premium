@@ -1,0 +1,849 @@
+/**
+Theme Name: Property Premium
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: property-premium
+Template: astra
+*/
+
+/* 
+*Global style 
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+.contener 
+{
+  background-color: white;
+  padding: 20px;
+  margin-bottom :50px;
+}
+
+.contener p {
+  margin: 0;
+}
+.contener h2
+{
+  font-weight: 700;
+  font-size : 17px;
+}
+
+.separator{
+  border: #7E7E7E6E solid 1px;
+  background-color: #7E7E7E6E solid;
+  margin: 10px 0;
+  height: 0px;
+}
+
+.template{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 10px;
+} 
+
+.column_1{
+grid-area: 1/1/2/3;
+display: flex;
+flex-direction: column;
+}
+
+.column_2{
+  grid-area: 1/3/2/4;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.row{
+display: flex;
+}
+
+.contener ul{
+  list-style: none;
+  margin : 0 0;
+}
+
+.listSeparatorCont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listSeparatorCont span{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #7E7E7E54;
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* 
+* FirstBannerInfo
+*/
+
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+a{
+  color:black;
+}
+
+#firstBannerInfo{
+  padding-top: 20px ;
+}
+
+#firstBannerInfo h1{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+
+#firstBannerInfo p{
+  margin-bottom: 0;
+}
+
+
+.addresLink{
+  color : #BC1C14;
+  font-weight: 700;
+}
+
+#firstBannerInfo .row{
+  width: 100%;
+  justify-content: space-between;
+}
+.headerPrice{
+  text-align: right;
+  color: #5a595f;
+  font-size: 30px;
+  font-weight:600;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#negociation{
+  font-weight: 700;
+}
+/* 
+* MansonryImageInfo
+*/
+
+
+#mansonry .btnImage {
+  padding: 0 0;
+  border: none;
+  background-color:#fff;
+  position: relative;
+  text-align: center;
+  color: white;
+  
+}
+
+
+
+#mansonry .img-1, #mansonry .img-2, #mansonry .img-3{
+    height: 100%;
+    object-fit: cover;
+}
+
+#mansonry .img-3 .btnImage img {
+  filter: brightness(40%);
+  transition-duration: 0.5s;
+}
+
+#mansonry .img-3 .btnImage img:hover{
+  filter: brightness(30%);
+}
+
+#mansonry .btnImage .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mansonry .grid {
+  margin : 30px 5px 10px 5px;
+  display: grid;
+  min-height: 500px;
+  height:30vw;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap:10px;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap:10px;
+}
+
+#mansonry .img-1{
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+#mansonry .img-2{
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+
+#mansonry .img-3{
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+#mansonry .grid div img, #mansonry .btnImage{
+  height: 100%;
+  width: 100%;
+}
+#mansonry .btnImage img{
+  object-fit: cover;
+}
+
+#mansonry .image{
+  background-size: cover;
+  background-position: center;
+}
+#mansonry .grid2{
+  margin : 10px 5px 30px 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap:10px;
+  grid-template-rows: 1fr ;
+  row-gap:10px;
+}
+
+#mansonry .grid2 .flex
+{
+  grid-area: 1 / 1 / 2 / 3;
+}
+#mansonry .grid2 a{
+  display: flex;
+  justify-content: center;
+}
+#mansonry .grid2 button
+{
+  grid-area: 1 / 3 / 2 / 4;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color :white;
+  background-color: #99130D;
+  border: solid 3px #99130D;
+  border-radius: 5px 5px 5px 5px;
+  padding: 15px 38px;
+  align-self: center;
+  justify-self: center;
+  transition: 1s;
+}
+#mansonry .grid2 button:hover
+{
+  background-color: white;
+  color:#99130D;
+}
+#mansonry .flex {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#mansonry .flex .info {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#mansonry .info p {
+ margin: 0;
+}
+
+#mansonry .info p i{
+  padding: 0 15px 15px 0;
+}
+
+.info-3
+{
+  border-left: 1px solid #bbbbbb;
+}
+.info-1
+{
+  border-right: 1px solid #bbbbbb;
+}
+
+
+/* 
+* Caractéristiques
+*/
+
+#carac ul {
+  column-count: 3;
+  list-style: none;
+
+}
+#carac ul i{
+  padding-right : 10px;
+}
+
+/*
+* Energie
+*/
+.epc .epcImage{
+max-width: 70px;
+}
+
+#energie .row{
+justify-content: space-between;
+}
+#energie .row div{
+  margin: 0 10px;
+  }
+.epc{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align:center;
+}
+
+.epc .value{
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.epc .def{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0;
+}
+.epc .def{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 10px 0;
+}
+
+
+/* 
+* Price
+*/
+
+#price .row {
+  width: 100%;
+}
+
+#price .row .col{
+  flex: 1 1 0px;
+}
+
+#price .row .col .condImage {
+  max-width: 350px;
+  width: 40vw;
+  min-width: 300px;
+}
+/*
+* Images
+*/
+
+#lightgallery 
+{
+  display: flex;
+}
+
+#lightgallery a{
+visibility: hidden;
+width: 0;
+height: 0;
+position: relative;
+cursor: pointer;
+
+}
+#lightgallery a:first-child
+{
+  width: 100%;
+  height: auto;
+  visibility: visible;
+}
+
+#lightgallery a img
+{
+  width: 100%;
+  height: auto;
+  visibility: visible;
+  filter: brightness(40%);
+  transition-duration: 0.5s;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+#lightgallery a img:hover{
+  filter: brightness(30%);
+}
+
+#lightgallery a:first-child:after
+{
+  content: "Afficher la suite";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:1!important;
+  color : white;
+}
+
+/*
+* Plan
+*/
+
+#plan .planGallery
+{
+  display: flex;
+  flex-wrap: wrap;
+	padding: 20px;
+}
+
+#plan .planGallery div
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+	min-width:130px;
+  height: 100px;
+  text-align: center;
+	margin:30px;
+}
+
+#plan .planGallery div i
+{
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+* Agent
+*/
+
+#agent{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+}
+
+#agent .row img{
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#agent .row h2{
+  font-family: "Roboto", Sans-serif;
+  font-weight: 600;
+  line-height: 1.6em;
+}
+
+#agent .row i{
+  color : #99130d;
+  padding: 5px;
+}
+
+
+#agent .row button{
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color:white;
+  border: solid 3px #99130d;
+  background-color:  #99130d;
+  border-radius: 5px 5px 5px 5px;
+  padding: 5px 15px 5px 15px;
+}
+
+#agent .row button:hover{
+  color:#99130d;
+  background-color:  white;
+}
+
+#agent, #agent input{
+  font-size: 12px;
+}
+
+#agent form{
+  max-width: 100vw;
+  font-size: 12px;
+}
+
+#agent textarea{
+  max-width: 100vw;
+  font-size: 12px;
+  size: 12px;
+}
+#agent .title{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#agent .subtitle{
+  margin-bottom: 15px;
+}
+
+
+#agent form div{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /*grid-template-rows: 30px 30px 120px 80px 70px;*/
+  row-gap:10px;
+  column-gap:10px;
+  max-width: 100%;
+}
+
+#agent form .form_fname{
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#agent form .form_name{
+  grid-area: 1 / 2 / 2 / 3;
+
+}
+
+#agent form .form_email{
+  grid-area: 2 / 1 / 3 / 2;
+
+}
+
+#agent form .form_phone{
+  grid-area: 2 / 2 / 3 / 3;
+
+}
+#agent form .form_message{
+  grid-area: 3 / 1 / 4 / 3;
+
+}
+#agent form p {
+  grid-area: 4 / 1 / 5 / 3;
+}
+#agent form button { 
+  grid-area: 5 / 1 / 6 / 3;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color:white;
+  border: solid 3px #99130d;
+  background-color:  #99130d;
+  border-radius: 5px 5px 5px 5px;
+  padding: 5px 15px 5px 15px;
+}
+#agent form button:hover {
+  color:w#99130d;
+  background-color: white;
+}
+#agent form .hidden{ 
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+/* Galery estates */
+#gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.estate_thumbnail_container{
+  width: 30%;
+  min-width: 370px;
+}
+
+#gallery .estate_thumbnail 
+{
+  display: flex;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 0px 10px 0px rgb(209 209 209 / 50%);
+  margin: 10px 10px;
+  padding: 0px 0px 0px 0px;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: white;
+}
+
+
+#gallery .estate_thumbnail img {
+  height: 250px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 9px 16px -11px rgb(0 0 0 / 44%);
+  object-fit: cover;
+}
+
+.negociation{
+  margin: 15px 10px 0px 10px;
+  color: #5a595f;
+  font-family: "Work Sans", Sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: -0.9px;
+}
+.estate-title{
+  margin:5px 10px;
+  color: #99130d;
+  font-family: "Roboto", Sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.row_thumbnail{
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px 20px 10px;
+  justify-content: space-between;
+}
+
+.estate-price{
+  color: #5A595F;
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: none;
+  text-align: left;
+  vertical-align: flex-start;
+}
+.col_thumbnail
+{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #5a595f;
+  margin-bottom: 0;
+}
+.col_thumbnail p{
+  margin-bottom: 0;
+}
+.col_thumbnail i
+{
+  margin : 10px 10px 5px 15px;
+  margin-bottom: 0;
+}
+
+#gallery p{
+  margin-bottom: 0;
+}
+
+#gallery .estate_thumbnail button{
+  position: relative;
+  z-index: 10;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color:#99130d;
+  border: solid 3px #99130d;
+  background-color:  white;
+  border-radius: 5px 5px 5px 5px;
+  padding: 15px 38px;
+  max-width: 50%;
+  align-self: center;
+  margin-bottom: 20px;
+  transition : 1s;
+}
+#gallery .estate_thumbnail button:hover{
+  color:#99130d;
+  background-color:  white;
+}
+
+/* 
+*RESEARCHE FORM 
+*/
+
+#research_form{
+  box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+  margin: -20px 0px 70px 0px;
+  padding: 30px 50px 35px 50px;
+  background-color: #ffffff;
+  border-radius: 5px 5px 5px 5px;
+  z-index: 10 !important;
+  position: relative;
+}
+#research_form > * {
+z-index: 10 !important;
+}
+#research_form .border{
+  padding: 0px 0px 0px 10px;
+  border-style: solid;
+  border-width: 0px 0px 0px 4px;
+  border-color: #99130d;
+}
+
+#research_form h2{
+  color: #99130d;
+  font-family: "Roboto", Sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 1.1em;
+  margin-bottom: 15px;
+}
+
+#research_form form .formRow{
+  display: grid;
+  grid-template-columns : repeat(auto-fill, 200px);
+  gap : 10px;
+  justify-content: center;
+}
+#research_form input,#research_form select {
+  height:50px;
+}
+
+#research_form form label{
+  font-size: 14px;
+}
+
+#research_form .formCol{
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+#research_form #rowBttn{
+display: flex;
+margin: 20px auto 0 auto;
+justify-content: center;
+}
+
+ #rowBttn button{
+  vertical-align: center;
+  width: 600px;
+  max-width: 50vw;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color:white;
+  border: solid 3px #99130d;
+  background-color:  #99130d;
+  border-radius: 5px 5px 5px 5px;
+  padding: 5px 15px 5px 15px;
+  transition: 1s;
+}
+#rowBttn button:hover{
+  color:#99130d;
+  background-color:  white;
+}
+
+#research_form input, #research_form select{
+  background-color: #ffffff;
+  border-color: rgba(3,53,55,0.2);
+  border-width: 1px 1px 1px 1px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+
+
+
+/* 
+*
+*   RESPONSIVE TABLETTE
+*
+*/
+
+@media screen and (max-width: 1024px) {
+  /* general */
+  .template{
+    display: flex;
+    flex-direction: column;
+  } 
+
+  /* firstBannerInfo */
+
+  #firstBannerInfo .row{
+    width: 100%;
+    flex-direction: column;
+  }
+  /* MansonryImageInfo */
+
+  #mansonry .grid{
+    margin-top: 10px;
+    height : 56.5vw;
+    min-height: 56.5vw;
+  }
+
+  #mansonry .img-1{
+    grid-area: 1 / 1 / 3 / 4;
+  }
+  #mansonry .img-2, #mansonry .img-3{
+    display:none;
+  }
+  #mansonry .grid2{
+    display: flex;
+    flex-direction: column;
+  }
+/* Caracrteristiques */
+  #carac ul {
+    column-count: 2;
+    list-style: none;
+  
+  }
+
+
+  /* agent */
+  #agent {
+    position: static;
+  }
+
+  #agent form div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Gallery */
+  #gallery .estate_thumbnail_container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* Form de recherche */
+  #research_form form .formRow{
+    display: grid;
+    grid-template-columns : repeat(auto-fill, 350px);
+}
+
+#research_form .formCol{
+  min-width: 350px;
+}
+	
+	#research_form{
+		padding: 30px 30px 35px 30px;
+	}
+}
+/* 
+*
+*   RESPONSIVE MOBILE
+*
+*/
+
+@media screen and (max-width: 768px) {
+
+/* Caracrteristiques */
+  #carac ul {
+    column-count: 1;
+    list-style: none;
+  
+  }
+  .row{
+    flex-direction: column;
+  }
+
+  #agent .row {
+    flex-direction: row;
+  }
+
+}
